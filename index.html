@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rubik's Cube</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Rubik's Cube</h1>
+      <div id="cube-container"></div>
+      <div class="main-controls">
+        <button id="scramble-btn">Scramble</button>
+        <button id="solve-btn" disabled>Solve</button>
+        <button id="reset-btn">Reset</button>
+      </div>
+
+      <div class="manual-controls">
+        <h3>Manual Controls</h3>
+        <div class="button-group">
+          <button data-move="U">U Up</button>
+          <button data-move="U'">U' Up Inverse</button>
+          <button data-move="D">D Down</button>
+          <button data-move="D'">D' Down Inverse</button>
+          <button data-move="L">L Left</button>
+          <button data-move="L'">L' Left Inverse</button>
+          <button data-move="R">R Right</button>
+          <button data-move="R'">R' Right Inverse</button>
+          <button data-move="F">F Front</button>
+          <button data-move="F'">F' Front Inverse</button>
+          <button data-move="B">B Back</button>
+          <button data-move="B'">B' Back Inverse</button>
+        </div>
+      </div>
+
+      <div id="steps-container">
+        <h3>Solving Steps</h3>
+        <ul id="steps-list">
+          <li>Steps</li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
